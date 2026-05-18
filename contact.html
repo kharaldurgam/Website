@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravintola MO:MO</title>
+    <link rel="icon" href="./icon.png"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  <!--This is for the icon to appear in website-->
+</head>
+<body>
+    <header class="header">
+        <div class="navcontainer">
+            <div class="logo">
+                <a href="index.html"><i class="fa-solid fa-utensils"></i></a>
+                <a href="index.html"><span id="span"><span class="frstspan">Ravintola</span><span class="scndspan">MO:MO</span></a></span>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <div class="languagetoogle">
+                        <button class="fi-btn">🇫🇮</button>
+                        <button class="en-btn">🇬🇧</button>
+                        </div>
+                    </ul>
+                    <div class="burgerbar">
+                        <i class="fa-solid fa-bars"style="color: white;"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!--Found this on uiverse.io-->
+    <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    <section class="about">
+        <h3>We'd love to hear from you</h3>
+        <h1>Contact Information</h1>
+        <address id="address">
+            <i class="fa-solid fa-location-dot"></i><p>Helsingintie 00, Helsinki, Finland</p>
+        <div class="openinghours">
+            <div class="hourscontainer">
+                <h1>Opening Hours</h1>
+
+                <div class="day">
+                    <h3>Monday - Friday</h3>
+                    <p>10:00 - 19:00</p>
+                </div>
+    
+                <div class="day">
+                    <h3>Saturday</h3>
+                    <p>12:00 - 19:00</p>
+                </div>
+    
+                <div class="day">
+                    <h3>Sunday</h3>
+                    <p style="color: red;"><b>Close</b></p>
+                </div>
+            </div>
+    
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6030177052153!2d25.04162457680331!3d60.29499363335347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469207b9eeb89779%3A0xc7427f848eb6748f!2sLaurea%20University%20of%20Applied%20Sciences!5e1!3m2!1sen!2sfi!4v1778164496951!5m2!1sen!2sfi"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form">
+        <form>
+            <h1>Book Your Table</h1>
+            <div class="formcontainer">
+                <div class="inputcontainer">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="inputcontainer">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+
+                </div>
+                <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <section class="form">
+        <form>
+            <h1>Customers Feedback</h1>
+            <p>Please leave your feedback to help us to improve our service.</p>
+            <div class="formcontainer">
+                <div class="inputcontainer">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="inputcontainer">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footercontainer">
+        <p>All rights reserved © 2026 | Ravintola Mo:Mo</p>
+        <div class="email">
+           <p>ravintola@ravintolamomo.fi</p>
+        </div>
+        <div class="contactnumber">
+            <p>0440000000</p>
+        </div>
+        <div class="socialmedia">
+            <div class="facebook">
+                <a href="httpps://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="tiktok">
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
